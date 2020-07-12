@@ -207,6 +207,7 @@
 .highlight {
   background-color: #f8f8f8;
 }
+body { width: 90%; }
 
 a { text-decoration: none; color: #999; }
 a:hover { text-decoration: underline; }
