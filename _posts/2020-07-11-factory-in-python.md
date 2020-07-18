@@ -63,16 +63,19 @@ Rather we will see these pattern from Maintainability/ Flexibility/ Testibility 
 it abstract the creation details of the product from our caller. 
 
 <p> Let's understand it with help of an problem. Suppose you represent Ford from “Ford vs Ferrari” and want to write a class which will represent Cars for some races</p>
-![image](https://github.com/Ankit-rana/Ankit-rana.github.io/blob/master/images/problem_simple_factory1.png)
+
+![problem_simple_factory1](https://user-images.githubusercontent.com/4917774/87854839-30a6b180-c932-11ea-8da5-2c48004850ff.png)
 
 <p> Note that the Ford class(creational class) will be creating actual class(Product class(s)) based on type of race passed to it. We will run LMPCar in LeMans race and Formula1 Car in grand prix. SO we want to add more kind of cars.</p>
-![image](https://github.com/Ankit-rana/Ankit-rana.github.io/blob/master/images/problem_simple_factory2.png)
+
+![problem_simple_factory2](https://user-images.githubusercontent.com/4917774/87854841-32707500-c932-11ea-89c2-1ff971102252.png)
 
 
 <p> So if more cars are added/deleted, you need to modify code. Suppose we want to close classes for modification. What should we do?
 Extra thought: Closed for modification?? why ??? suppose it is a library which takes any type of car and library do certain operation on it.</p>
 <p> Introducing Simple factory</p>
-![image](https://github.com/Ankit-rana/Ankit-rana.github.io/blob/master/images/simple_factory.png)
+
+![simple_factory](https://user-images.githubusercontent.com/4917774/87854851-44521800-c932-11ea-9e07-b9cfe6524a79.png)
 
 By encapsulating the car creation in one class, we now have only one place to make modifications when the implementation changes.
 
