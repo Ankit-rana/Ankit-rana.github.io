@@ -56,15 +56,22 @@ result = button.paint()
 print(result)
 ```
 
-Rather we will see these pattern from maintainability point of view - how to decouple components.
+Rather we will see these pattern from Maintainability/ Flexibility/ Testibility point of view which will mostly depend on how we decouple components.
 
-## Factory
+## Simple Factory
 
 abstract the creation details of the product from our caller. 
 
-```python
-more code
-```
+<p> Let's understand it with help of an problem. Suppose you represent Ford from “Ford vs Ferrari” and want to write a class which will represent Cars for some races</p>
+[problem](https://www.google.com)
+
+<p> Note that the Ford class(creational class) will be creating actual class(Product class(s)) based on type of race passed to it. We will run LMPCar in LeMans race and Formula1 Car in grand prix. SO we want to add more kind of cars.</p>
+[problem](https://www.google.com)
+
+<p> So if more cars are added/deleted, you need to modify code. Suppose we want to close classes for modification. What should we do?
+Extra thought: Closed for modification?? why ??? suppose it is a library which takes any type of car and library do certain operation on it.</p>
+<p> Introducing Simple factory</p>
+[Solution](https://www.google.com)
 
 ## Factory Method Pattern
 
