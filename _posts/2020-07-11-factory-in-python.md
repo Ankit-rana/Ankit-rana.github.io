@@ -89,15 +89,22 @@ it provides an interface for creating objects but allows subclasses to provide i
 
 ![factory_with_simple](https://user-images.githubusercontent.com/4917774/87855411-b37d3b80-c935-11ea-8ff2-d873696a9ada.png)
 
-<p>To checkout difference, consider User hierarchy, Creational hierarchy and Product hierarchy. Factory method design pattern is one that provides an interface for creating objects but allows subclasses to alter the type of an object that will be created.</p>
+<p>To checkout difference, consider User hierarchy, Creational class(s) and Product class(s). Factory method design pattern is one that provides an interface for creating objects but allows subclasses to alter the type of an object that will be created.</p>
 
 ## Abstract Factory Pattern
 
-it encapsulate all simple factories that have common theme without specifying their name
+it encapsulate all simple factories that have common theme without specifying their name.
+<p>Suppose we want to put a little control on how factories can work</p>
 
-```python
-more code
-```
+![abstract_factory_pattern](https://user-images.githubusercontent.com/4917774/87855406-aeb88780-c935-11ea-911a-d1c302c80ca8.png)
+
+## What’s next
+
+- https://python-patterns.guide/gang-of-four/factory-method/
+- https://python-patterns.guide/gang-of-four/abstract-factory/
+- abstractmethod decorator in abc package
+- Dynamic Import with Python
+- [python entry points](https://amir.rachum.com/blog/2017/07/28/python-entry-points/)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
