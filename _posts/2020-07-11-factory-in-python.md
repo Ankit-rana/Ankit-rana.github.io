@@ -71,8 +71,8 @@ it abstract the creation details of the product from our caller.
 ![problem_simple_factory2](https://user-images.githubusercontent.com/4917774/87854841-32707500-c932-11ea-89c2-1ff971102252.png)
 
 
-<p> So if more cars are added/deleted, you need to modify code. Suppose we want to close classes for modification. What should we do?
-Extra thought: Closed for modification?? why ??? suppose it is a library which takes any type of car and library do certain operation on it.</p>
+<p> So if more cars are added/deleted, you need to modify code. Suppose we want to close classes for modification. What should we do?  > </p>
+> Extra thought: Closed for modification?? why ??? suppose it is a library which takes any type of car and library do certain operation on it.
 <p> Introducing Simple factory</p>
 
 ![simple_factory](https://user-images.githubusercontent.com/4917774/87854851-44521800-c932-11ea-9e07-b9cfe6524a79.png)
@@ -81,15 +81,19 @@ By encapsulating the car creation in one class, we now have only one place to ma
 
 ## Factory Method Pattern
 
-provides an interface for creating objects but allows subclasses to provide implementation of the type of an object that will be created.
+it provides an interface for creating objects but allows subclasses to provide implementation of the type of an object that will be created.
 
-```python
-more code
-```
+<p> To understand above statement, we go ahead with our previous ford example. Now Ford have become famous in car racing. Everybody wants to partner with Ford like Lotus and Cooper. As a good car producer, you want to ensure the quality of the car and you want them to use your time tested code. But even then allow them to create their own car.</p>
+
+<p>Introducing Factory Method Pattern</p>
+
+![factory_with_simple](https://user-images.githubusercontent.com/4917774/87855411-b37d3b80-c935-11ea-8ff2-d873696a9ada.png)
+
+<p>To checkout difference, consider User hierarchy, Creational hierarchy and Product hierarchy. Factory method design pattern is one that provides an interface for creating objects but allows subclasses to alter the type of an object that will be created.</p>
 
 ## Abstract Factory Pattern
 
-encapsulate all simple factories that have common theme without specifying their name
+it encapsulate all simple factories that have common theme without specifying their name
 
 ```python
 more code
