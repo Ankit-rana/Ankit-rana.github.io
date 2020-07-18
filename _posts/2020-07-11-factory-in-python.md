@@ -60,18 +60,22 @@ Rather we will see these pattern from Maintainability/ Flexibility/ Testibility 
 
 ## Simple Factory
 
-abstract the creation details of the product from our caller. 
+it abstract the creation details of the product from our caller. 
 
 <p> Let's understand it with help of an problem. Suppose you represent Ford from “Ford vs Ferrari” and want to write a class which will represent Cars for some races</p>
+[[https://github.com/Ankit-rana/Ankit-rana.github.io/blob/master/images/problem_simple_factory1.png|alt=problem]]
 [problem](https://www.google.com)
 
 <p> Note that the Ford class(creational class) will be creating actual class(Product class(s)) based on type of race passed to it. We will run LMPCar in LeMans race and Formula1 Car in grand prix. SO we want to add more kind of cars.</p>
+[[https://github.com/Ankit-rana/Ankit-rana.github.io/blob/master/images/problem_simple_factory2.png|alt=problem]]
 [problem](https://www.google.com)
 
 <p> So if more cars are added/deleted, you need to modify code. Suppose we want to close classes for modification. What should we do?
 Extra thought: Closed for modification?? why ??? suppose it is a library which takes any type of car and library do certain operation on it.</p>
 <p> Introducing Simple factory</p>
-[Solution](https://www.google.com)
+[[https://github.com/Ankit-rana/Ankit-rana.github.io/blob/master/images/simple_factory.png|alt=solution]]
+
+By encapsulating the car creation in one class, we now have only one place to make modifications when the implementation changes.
 
 ## Factory Method Pattern
 
