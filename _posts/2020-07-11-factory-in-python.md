@@ -72,7 +72,9 @@ it abstract the creation details of the product from our caller.
 
 
 <p> So if more cars are added/deleted, you need to modify code. Suppose we want to close classes for modification. What should we do?  > </p>
+
 > Extra thought: Closed for modification?? why ??? suppose it is a library which takes any type of car and library do certain operation on it.
+
 <p> Introducing Simple factory</p>
 
 ![simple_factory](https://user-images.githubusercontent.com/4917774/87854851-44521800-c932-11ea-9e07-b9cfe6524a79.png)
