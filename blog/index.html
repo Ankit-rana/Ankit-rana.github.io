@@ -2,11 +2,35 @@
 layout: default
 title: Ankit Rana's Blog
 ---
-<h1>{{ page.title }}</h1>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
 
-<table>
-  <tr>
-    <td>
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+      <h1>{{ page.title }}</h1>
       <ul class="posts">
 
         {% for post in site.posts %}
@@ -14,9 +38,13 @@ title: Ankit Rana's Blog
         {% endfor %}
 
       </ul>
-    </td>
-    <td>
-      <img src="https://thepracticaldev.s3.amazonaws.com/i/e727h5b9nozcuo4za2yw.png" alt="overall" width="500" height="700">
-    </td>
-  </tr>
-</table>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <img src="https://thepracticaldev.s3.amazonaws.com/i/e727h5b9nozcuo4za2yw.png" alt="overall" width="500" height="700">
+  </div>
+</div>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Jul 2018 02:10:23 GMT -->
+</html>
