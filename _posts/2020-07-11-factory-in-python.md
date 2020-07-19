@@ -66,12 +66,12 @@ it abstract the creation details of the product from our caller.
 
 ![problem_simple_factory1](https://user-images.githubusercontent.com/4917774/87854839-30a6b180-c932-11ea-8da5-2c48004850ff.png)
 
-<p> Note that the Ford class(creational class) will be creating actual class(Product class(s)) based on type of race passed to it. We will run LMPCar in LeMans race and Formula1 Car in grand prix. SO we want to add more kind of cars.</p>
+<p> SO we want to add more kind of cars. Note that the Ford class(creational class) will be creating actual class(Product class(s)) based on type of race passed to it. We will run LMPCar in LeMans race and Formula1 Car in grand prix. </p>
 
 ![problem_simple_factory2](https://user-images.githubusercontent.com/4917774/87854841-32707500-c932-11ea-89c2-1ff971102252.png)
 
 
-<p> So if more cars are added/deleted, you need to modify code. Suppose we want to close classes for modification. What should we do?  > </p>
+<p> So if more cars are added/deleted, you need to modify code. Suppose we want to close classes for modification. What should we do?</p>
 
 > Extra thought: Closed for modification?? why ??? suppose it is a library which takes any type of car and library do certain operation on it.
 
