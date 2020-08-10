@@ -2,8 +2,31 @@
 layout: default
 title: About Ankit Rana
 ---
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
 
-		<div class="about">
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+</head>
+<body>
+		<div class="row">
+			<div class="column">
 			<h1>About</h1>
 			<p> Currently working as a Openstack developer, I am an Python Enthusiast with over five years of experience of building High Performance Storage Platform and Cloud Platform</p>
 			<p>I am a Certified Kubernetes Adminitrator. I have keen interest in exploring new technologies like Containers, Kubernetes, NOSQL databases(MongoDB), MessageBroker(RabbitMQ), Configuration Management System(Puppet, Ansible) </p>
@@ -13,6 +36,13 @@ title: About Ankit Rana
 			<p>I like to listen to songs , watch TV series and play Football in my free time.</p>
 
 			<ul class="contacts">
-				<li><a href="http://www.meetup.com/PythonPune/">pythonpune</a></li>
-				</ul>
+			<li><a href="http://www.meetup.com/PythonPune/">pythonpune</a></li>
+			</ul>
+			</div>
+			<div class="column">
+			  <img src="https://user-images.githubusercontent.com/4917774/89781114-5b9ab480-db30-11ea-9e41-cc42ac90120d.jpg" alt="overall" width="700">
+			  <img src="https://user-images.githubusercontent.com/4917774/89781107-55a4d380-db30-11ea-95ac-cf107d51d1c6.jpg" alt="overall" width="700">
+			</div>
 		</div>
+</body>
+</html>
